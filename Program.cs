@@ -7,16 +7,23 @@ namespace Oppgave03_PurePuzzles
     {
         static void Main(string[] args)
         {
-            string rowofhash = "";
             string space = " ";
+            int x = 8;
 
             for (int b = 0; b < 4; b++)
             {
-                for (int a = 0; a < 8; a++)
+                for (int c = 0; c < b; c++)
                 {
-                    rowofhash = "#";
-                            Console.Write(rowofhash);
+                    Console.Write(space);
                 }
+                
+                for (int a = 0; a < x; a++)
+                {
+                    string rowofhash = "#";
+                    Console.Write(rowofhash);
+                }
+
+                x = x - 2;
 
                 Console.WriteLine(space);
             }
